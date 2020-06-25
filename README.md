@@ -14,5 +14,7 @@
 ## How to install & play
 
 Download or clone the repository.
+
 Run `cd <cloned repo>`
+
 Run `ruby bin/run.rb`
