@@ -26,7 +26,7 @@ class Game
       end
 
       players = players.sort_by {|p| -p.score }
-      puts "#{potential_winner[0]} has won"
+      puts "#{players[0]} has won"
       puts "The final scores are: "
       players.each {|p| puts "Player: #{p.name}, Score: #{p.score}"}
       
