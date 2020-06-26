@@ -17,7 +17,7 @@ class Game
       if potential_winner.count > 1 
         puts "We have a tie"
         puts "Sudden death round"
-        while potential_winner[0].score == potential_winner[1].score
+        until potential_winner.any? {|pw| pw.score != potential_winner[0].score}
           potential_winner.each do |player| 
             player.cards << dealer.deal_card
             puts "Dealer has dealt #{player.name} card #{player.cards.last}"
